@@ -1,0 +1,35 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: rgb(241, 208, 208);
+    background-color: rgba(39, 99, 45, 0.811);
+}
+
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+
+.heading
+{
+  font-size:18px;
+  border-radius:10px;
+  letter-spacing: 10px;
+}

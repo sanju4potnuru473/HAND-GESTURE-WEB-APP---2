@@ -1,0 +1,70 @@
+<html>
+<head>
+  <head>
+    <title>Hand Gesture to emoji</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+
+
+   <center>
+  <h3 class="btn btn-info heading">Hand gesture To Emoji app
+    <br>
+    <span>&#9757;</span>
+    <span>&#9995;</span>
+    <span>&#128406;</span>
+    <span>&#129304;</span>
+    <span>&#9994;</span>
+    <span>&#9997;</span>
+    </h3>
+
+    <p style="font-size: 22px;">Put an hand gesture to generate emoji
+      <br>
+      <b style="color: ivory">the model is designed to identify the following
+        <div></div>
+        <h4 style="font-size:x-large;">
+      <span>&#9996;|</span>
+      <span>&#9994;|</span>
+      <span>&#128077;|</span>
+      <span>&#128076;</span>
+        </h4>
+
+      </b>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View -</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1</label>
+        <p class="emotion_name" id="result_emotion_name"></p>
+        <p class="emoji" id="update_emoji"></p>
+        <label>Prediction 2</label>
+
+        <p class="emotion_name" id="result_emotion_name2"></p>
+        <p class="emoji" id="update_emoji2"></p>
+      </div>
+
+      <div  class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predict emotion</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+   </center>
+
+    <br><br>
+</body>
+
+<script src="main.js"></script>
+  </html>
